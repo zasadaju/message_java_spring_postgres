@@ -17,4 +17,7 @@ public class MessageService {
     public Message saveMessage(Message message) {
         return messageRepository.save(message);
     }
+    public void deleteMessage(Long id) {
+        messageRepository.deleteById(id);
+    }
 }
