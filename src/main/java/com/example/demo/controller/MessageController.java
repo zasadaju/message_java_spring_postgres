@@ -33,7 +33,12 @@ public class MessageController {
 //        messageService.deleteMessage(id);
 //        return "redirect:/";
 //    }
-    @PostMapping("/deleteMessage")
+//    @PostMapping("/deleteMessage")
+//    public String deleteMessage(@RequestParam("id") Long id) {
+//        messageService.deleteMessage(id);
+//        return "redirect:/";
+//    }
+    @DeleteMapping("/deleteMessage/{id}")
     public String deleteMessage(@RequestParam("id") Long id) {
         messageService.deleteMessage(id);
         return "redirect:/";
