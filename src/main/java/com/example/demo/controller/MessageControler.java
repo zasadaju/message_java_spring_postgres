@@ -34,7 +34,7 @@ public class MessageControler {
 //    }
     @PostMapping("/deleteMessage")
     public String deleteMessage(@RequestParam("id") Long id) {
-        if(id !=null) {
+        if(id != null) {
             messageService.deleteMessage(id);
         }
         return "redirect:/";

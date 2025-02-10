@@ -16,7 +16,7 @@
             <span th:text="${message.content}">Message content</span>
             <form th:action="@{/deleteMessage}" method="post">
 <!--            <form th:action="@{/deleteMessage(id=${message.id})}" method="post">-->
-                <input type="hidden" name="id" th.value="${message.id}" />
+                <input type="hidden" name="id" th:value="${message.id}" />
                 <button type="submit">Delete</button>
             </form>
 <!--            <a th:href="@{/deleteMessage(id=${message.id})}">Delete</a>-->
