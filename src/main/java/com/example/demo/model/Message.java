@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,7 +23,7 @@ public class Message {
     public String getContent() {
         return content;
     }
-    public void  setContent(String content) {
+    public void setContent(String content) {
         this.content = content;
     }
 }
