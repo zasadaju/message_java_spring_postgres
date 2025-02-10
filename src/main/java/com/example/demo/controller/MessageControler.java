@@ -27,17 +27,17 @@ public class MessageControler {
         messageService.saveMessage(newMessage);
         return "redirect:/";
     }
-//    @GetMapping("/deleteMesage")
+//    @GetMapping("/deleteMessage")
 //    public String deleteMessage(@RequestParam("id") Long id) {
 //        messageService.deleteMessage(id);
 //        return "redirect:/";
 //    }
-    @PostMapping("/deleteMesage")
+    @PostMapping("/deleteMessage")
     public String deleteMessage(@RequestParam("id") Long id) {
         messageService.deleteMessage(id);
         return "redirect:/";
     }
-//    @DeleteMapping("/deleteMesage/{id}")
+//    @DeleteMapping("/deleteMessage/{id}")
 //    public String deleteMessage(@PathVariable Long id) {
 //        messageService.deleteMessage(id);
 //        return "redirect:/";
